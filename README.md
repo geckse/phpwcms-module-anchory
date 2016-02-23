@@ -47,4 +47,4 @@ Developed on phpwcms v1.8 with php 5.3
 
 License
 ----
-GPL (Notice: May change for later versions)
+GPL

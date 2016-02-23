@@ -72,12 +72,18 @@ function anchory_link_to($para){
     $sql .= "OR article_archive_status=0 AND article_end>NOW()) ";
     $sql .= " LIMIT 1";
     $result = _dbQuery($sql);
- 	$result = $result[0];   
+    
+ 	if(is_array($result) && isset($result[0])){
+   	 	$result = $result[0];   
+    }
     
     if(isset($result['article_alias'])){
 		if($text == "") $text = $result['article_title'];
 		$link = '<a href="index.php?'.$result['article_alias'].'" title="'.$text.'">'.$text.'</a>';    
-    }
+    } else {
+	    $link = $text; // article id / alias unknown? render content
+	}
+     
               
 	return $link;
 	
