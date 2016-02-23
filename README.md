@@ -10,7 +10,7 @@ For further information check module page: www.geckse.de/anchory.html
 
 ## New CKEditor-Link dialog
 
-![Anchory CKEditor](https://github.com/geckse/phpwcms-module-anchory/anchory_eckeditor.png)
+![Anchory CKEditor](https://raw.githubusercontent.com/geckse/phpwcms-module-anchory/master/anchory_eckeditor.png)
 
 
 ## Replacement-Tags
